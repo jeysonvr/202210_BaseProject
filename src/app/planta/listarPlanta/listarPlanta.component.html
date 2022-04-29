@@ -1,33 +1,30 @@
-<div class="container">
-  <p class="title">Vivero El Otoño</p>
-  <hr />
-  <img src="../../../assets/img/banner.svg" width="100%" />
-  <hr />
+<p class="title">Vivero El Otoño</p>
+<hr />
+<img src="../../../assets/img/banner.svg" width="100%" />
+<hr />
 
-  <div class="row">
-    <div class="col-8">
-      <table class="table">
-        <thead>
-          <tr class="table-dark">
-            <th scope="col">#</th>
-            <th scope="col">Nombre común</th>
-            <th scope="col">Tipo</th>
-            <th scope="col">Clima</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let planta of plantas; index as i">
-            <th scope="row">{{i+1}}</th>
-            <td>{{planta.nombre_comun}}</td>
-            <td>{{planta.tipo}}</td>
-            <td>{{planta.clima}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="row">
+  <div class="col-8">
+    <table class="table">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">#</th>
+          <th scope="col">Nombre común</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Clima</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let planta of plantas; index as i">
+          <th scope="row">{{i+1}}</th>
+          <td>{{planta.nombre_comun}}</td>
+          <td>{{planta.tipo}}</td>
+          <td>{{planta.clima}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
-  <p>Total plantas de interior: {{ totalPlantasInterior }}</p>
-  <p>Total plantas de exterior: {{ totalPlantasExterior }}</p>
-  <footer class="text-center">Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio</footer>
 </div>
+
+<p class="plantasInterior">Total plantas de interior: {{ totalPlantasInterior }}</p>
+<p class="plantasExterior">Total plantas de exterior: {{ totalPlantasExterior }}</p>

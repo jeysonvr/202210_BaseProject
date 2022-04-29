@@ -7,3 +7,12 @@
 
   color: #000000;
 }
+
+table tr:last-child td,
+table tr:last-child th {
+  border-style: none;
+}
+
+.totals{
+  line-height: 1;
+}

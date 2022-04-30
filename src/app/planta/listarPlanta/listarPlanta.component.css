@@ -13,6 +13,11 @@ table tr:last-child th {
   border-style: none;
 }
 
-.totals{
+.totals {
   line-height: 1;
+}
+
+.tableDark {
+  background-color: #333A40;
+  color: white;
 }

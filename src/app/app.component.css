@@ -1,3 +1,7 @@
 * [lang^=en] {
   color: green;
 }
+
+body {
+  padding-top: 14px;
+}
